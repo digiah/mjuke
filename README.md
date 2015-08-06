@@ -15,7 +15,7 @@ Each panelist can:
 3) eject an asset (remove from playback immediately)
 4) mute an asset
 
-INITIAL TECHNICAL SUMMARY:
+INITIAL TECHNICAL SUMMARY of files in REPO:
 
 clr.php - "Clear" clears the playback cue.
 
@@ -28,6 +28,8 @@ gq.php  - "Get Queue" gets the list of media objects that are NOT playing, retur
 kq.php - "Kill Queue" deletes a specific item from the playback queue and any associated commands. The EJECT command does this. Returns a JSON object with status.
 
 nq.php - "Enqueue" adds a media asset to the playback queue, returns a JSON object with status of operation
+
+playback-cmd-queues.sql - These are the mySQL commands to create the two tables required to manage the jukebox. Naming convention? "tthw" stands for "Three The Hard Way."
 
 ppq.php - "Play Pause Queue" updates the playback queue for the corresponding media object with the command passed to it, removes that command from the command queue. Returns a JSON object with status of the operation.
 
